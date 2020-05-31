@@ -1,3 +1,4 @@
+#Importing requied class and methods
 from user_app.models import UserDetails,ActivityPeriod
 from user_app.serializers import UserDetailsSerializers,ActivityPeriodSerializers
 from rest_framework import viewsets
@@ -5,13 +6,16 @@ from django.http import HttpResponse
 from faker import Faker
 
 
-
+#used to fetch the data from userdetails table 
 class UserViewSet(viewsets.ModelViewSet):
     queryset = UserDetails.objects.all()
     serializer_class = UserDetailsSerializers
 
 
 def population(request):
+	"""
+	used to populate database by dummy data
+	"""
 	fakegen=Faker()
 	user_person=['Egon Spengler', 'Glinda Southgood','Joshua Mason','Ashish Kumar'] 
 	for item in user_person:
