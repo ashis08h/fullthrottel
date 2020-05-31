@@ -24,8 +24,11 @@ A readme for an API for getting data of Activity Tracker of a user.
 
 ## Launch
 
- pythonanywhere - http://ashis08h.pythonanywhere.com/ (project)
+ pythonanywhere - http://ashis08h.pythonanywhere.com/user_details/   (project)
 
+ To populate database with fake data - http://ashis08h.pythonanywhere.com/populate/data/
+
+  
  GitHub - https://github.com/ashis08h/fullthrottel (project)
 
  pythonanywhere - (documentation)
